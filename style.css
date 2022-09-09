@@ -184,8 +184,8 @@ label .menu {
   label a {
     margin-bottom: 1em;
     display: block;
-    color: #f38630;
-    text-decoration: none;
+    color: #04c2c9;
+    text-decoration: underline #291b6a;
     
   }
   
