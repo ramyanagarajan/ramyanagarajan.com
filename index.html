@@ -1,6 +1,33 @@
 <html>
     <head>
+        <title> Ramya Nagarajan | Full-Stack Developer | Front-End Specialist </title>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>
+            
+            @media only screen and (min-width:360px) {
+                .contact_image{
+                    width:50px !important; 
+                    height:50px !important;
+                }
+                .about_1{
+                    font-size:19px !important;
+                }
+                .about_2{
+                    font-size:15px !important;
+                    text-align: justify ! important;
+                    width: 75%;
+                    display: block;
+                }
+                .center_about_me{
+                    width: 100% !important;
+                    background-color: aqua;
+                }
+                header{
+                    width: 100% !important;
+                }
+            }
+
             /* Parent Container */
             .content_img{
                 position: relative;
@@ -67,10 +94,23 @@
                 display: flex;
                 align-items: center;
             }
+            .my_name{
+                font-size:42px;
+            }
+            .contact_image{
+                width:100px; 
+                height:100px;
+            }
+            .about_1{
+                font-size:60px;
+            }
+            .about_2{
+                font-size:32px;
+            }
+            .center_about_me{
+                width: 100%;
+            }
         </style>
-        <title>Ramya Nagarajan | Full-Stack Developer | Front-End Specialist </title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- <link rel="icon" type="image/x-icon" href="C:\Users\Anand\Downloads\favicon.ico"> -->
     </head>
     <body>
@@ -78,7 +118,7 @@
             <div class="header">
                 <div class="leftheader">
                 <!-- <img class="profile_pic" src="C:\Users\Anand\Downloads\rn.jpg" alt="Image of Ramya Nagarajan" style="width:50px; height:50px; border-radius:100px; margin-top:7px; margin-left: 7px;"> -->
-                <h2 style="font-size:42px"> &nbsp; Ramya Nagarajan</h2>
+                <h2 class="my_name"> &nbsp; Ramya Nagarajan</h2>
                 </div>
                 <div></div>
                 <div class="rightheader">
@@ -92,34 +132,31 @@
         </header>
         <section class="sec_about" id="sec_about">
             <br> <br>
-            <br> <br>
-            <br> <br>
-            <br> <br> 
             <div class="div_about">
                 <div class="side_pics">               
                     <a href="https://www.linkedin.com/in/ramyanagarajan254/" target="_blank" >
                         <div class="content_img">
-                            <img class="" src="linkedin.svg" alt="Linkedin Logo" style="width:100px; height:100px;">
+                            <img class="contact_image" src="linkedin.svg" alt="Linkedin Logo">
                             <div style="left:100">Goto Ramya's Linkedin Profile</div>
                         </div>
                     </a> 
                     <br>
                     <a href="https://github.com/ramyanagarajan" target="_blank" >
                         <div class="content_img">
-                            <img class="" src="github.svg" alt="Github Logo" style="width:100px; height:100px;">
+                            <img class="contact_image" src="github.svg" alt="Github Logo">
                             <div style="left:100">Goto Ramya's Github Profile</div>
                         </div>
                     </a> <br>
                     <a href="https://medium.com/@ramyatenshi" target="_blank" >
                         <div class="content_img">
-                            <img class="" src="book.svg" alt="Book Logo" style="width:100px; height:100px;">
+                            <img class="contact_image" src="book.svg" alt="Book Logo">
                             <div style="left:100">Read Ramya's Articles</div>
                         </div>
                     </a>
                 </div>
-                <center style="width: 100%;">
-                    <p> <b style="font-size:60px"> Hi! I'm Ramya Nagarajan! </b> <br> </p>
-                    <p style="font-size:32px"> 
+                <center class="center_about_me"> <br>
+                    <p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                    <p class="about_2"> 
                         I'm a Software Developer. <br>
                         I love to create beautiful products with meaningful and delightful User Experience.
                     </p>
@@ -136,7 +173,7 @@
         <section >
         </section>
         <footer>
-            <center>
+            <center style="width:75%">
                 Copyright 2022. Made by Ramya Nagarajan.
             </center>
         </footer>
