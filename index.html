@@ -10,9 +10,23 @@
                     display: flex;
                     align-items: center;
                 }
+                .lang_i_work_on {
+                    width: 75%;
+                }
+                .i_style {
+                    font-size: 50px !important;
+                    padding: 10px !important;
+                    border-radius: 60px !important;
+                }
+                .column {
+                    padding: 20px 25px !important;
+                }
                 /* html{
                     width: 100% !important;
                 } */
+                section {
+                    margin-left: 55px !important;
+                }
                 .rightheadercontent{
                     display: none;
                 }
@@ -35,8 +49,11 @@
                 .center_about_me{
                     width: 100% !important;
                 }
-                header{
-                    /* width: 100% !important; */
+                h2{
+                    font-size:16px !important;
+                }
+                p{
+                    font-size:12px !important;
                 }
             }
     /* Ends Here - Media Query for (min-width:360px) and (max-width:680px) */
@@ -51,6 +68,7 @@
                 height: 200px; */
                 float: left;
                 margin-right: 10px;
+                margin-top: 10px;
             }
             /* Child Text Container */
             .content_img div{
@@ -80,7 +98,7 @@
                 margin-top: 10px;
                 margin-left: 2px;
                 margin-right: 2px;
-                border: 3px solid black;
+                border-bottom: 5px solid #04c2c9;
                 display: flex !important;
                 /* flex-wrap: nowrap; */
                 justify-content: space-between;
@@ -102,10 +120,14 @@
 
             }
             a:hover {
-                text-decoration: underline;
+                color:#04c2c9 ;
+                text-shadow: 1px black;
             }
             
             .side_pics{
+                position:fixed;
+                top:25%;
+                height:100%;
                 padding: 5px;
                 display: flex;
                 flex-direction: column;
@@ -115,6 +137,7 @@
                 align-items: center;
             }
             .my_name{
+                color: #291b6a;
                 font-size:42px;
             }
             .contact_image{
@@ -123,8 +146,16 @@
             }
             .about_1{
                 font-size:60px;
+                color: #291b6a;
             }
             .about_2{
+                line-break: 2px;
+                width:50%;
+                font-size:32px;
+                /* font-family: "europa", sans-serif; */
+                text-align: center !important;
+            }
+            .about_name{
                 font-size:32px;
             }
             .center_about_me{
@@ -136,6 +167,8 @@
             .rightheadercontent{
                 margin: 10px;
                 font-size:32px;
+                color: #291b6a;
+
             }
             .profile_pic{
                 width:120px; 
@@ -149,7 +182,8 @@
             .websiteFrame {
                 position: fixed;
                 z-index: 990;
-                background-color: rgba(198, 250, 229, 1);
+                background-color:#04c2c9;
+                 /* rgba(198, 250, 229, 1); */
             }
             #websiteFrameTop {
                 top: 0;
@@ -176,10 +210,83 @@
                 width: 10px;
             }
         /* Starts here - For Fixed border around the page (responsive)*/
-    
+    section{
+        margin-left: 100px;
+    }
+    .content {
+            flex: 1;
+            overflow: auto;
+        }
+
+        .wrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        u{
+            color:black;
+        }
+        h2 {
+            font-size:28px;
+            color:#616161;
+            margin-block-end: 0em;
+        }
+          
+        .slide-right h2 {
+            animation: 1s slide-right 1s forwards;
+              transform:translateX(100%);
+          }
+          .slide-right h1 {
+            animation: 1s slide-right 1s forwards;
+            transform:translateX(100%);
+          }
+          .slide-right .column{
+            animation: 1s slide-right 1s forwards;
+            transform:translateX(1000%);
+          }
+          @keyframes slide-right {
+            to {
+              transform:translate(0);
+            }
+          }
+          .heading_bar{
+            background: #291b6a;
+            height: 4px;
+            /* margin: 25px 0 100px 0; */
+            width:100px;
+          }
+          .about_heading{
+            color:#04c2c9;
+          }
+          .box_shadow{
+            background-color: #ffffff;
+            /* border-radius: 6px; */
+            /* box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8; */
+            color: #141c3a;
+            display: block;
+            /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;  */
+            }
+        .lang_i_work_on{
+            display:flex;
+            justify-content: center;
+        }
+        .column{
+            box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+            padding: 50px 45px;
+        }
+        p{
+            font-size: 24px;
+        }
+        .i_style{
+            font-size: 150px; 
+            padding:20px; 
+            background-color:#04c2c9;
+            border-radius: 60px;
+        }
         </style>
     </head>
     <body>
+    <div class="wrapper">
         <header>
             <div class="header">
                 <div class="leftheader">
@@ -187,62 +294,345 @@
                     <h2 class="my_name"> &nbsp; Ramya Nagarajan</h2>
                 </div>
                 <div class="rightheader">
-                    <a class="rightheadercontent" href="#sec_about"><i><h3> About</h3> </i></a> &nbsp;
-                    <a class="rightheadercontent" href="#sec_articles"><i><h3> Articles</h3></i></a>  &nbsp;
-                    <a class="rightheadercontent" href="#sec_achievements"><i><h3> Achievements</h3></i></a>  &nbsp;
-                    <a class="rightheadercontent" href="#sec_projects"><i><h3> Projects</h3></i></a>  &nbsp;
-                    <a class="rightheadercontent" href="#sec_contact"><i><h3> Contact</h3></i></a> &nbsp;
+                    <a class="rightheadercontent about_heading" href="#sec_about"><i><h3> About</h3> </i></a> &nbsp;
+                    <a class="rightheadercontent" href=""><i><h3> Articles</h3></i></a>  &nbsp;
+                    <a class="rightheadercontent" href=""><i><h3> Achievements</h3></i></a>  &nbsp;
+                    <a class="rightheadercontent" href=""><i><h3> Projects</h3></i></a>  &nbsp;
+                    <a class="rightheadercontent" href=""><i><h3> Contact</h3></i></a> &nbsp;
                 </div>
             </div>
         </header>
-        <section class="sec_about" id="sec_about">
-            <br> <br>
-            <div class="div_about">
-                <div class="side_pics">               
-                    <a href="https://www.linkedin.com/in/ramyanagarajan254/" target="_blank" >
-                        <div class="content_img">
-                            <img class="contact_image" src="linkedin.svg" alt="Linkedin Logo">
-                            <div class="goto_label">Goto Ramya's Linkedin Profile</div>
-                        </div>
-                    </a> 
-                    <br>
-                    <a href="https://github.com/ramyanagarajan" target="_blank" >
-                        <div class="content_img">
-                            <img class="contact_image" src="github.svg" alt="Github Logo">
-                            <div class="goto_label">Goto Ramya's Github Profile</div>
-                        </div>
-                    </a> <br>
-                    <a href="https://medium.com/@ramyatenshi" target="_blank" >
-                        <div class="content_img">
-                            <img class="contact_image" src="book.svg" alt="Book Logo">
-                            <div class="goto_label">Read Ramya's Articles</div>
-                        </div>
-                    </a>
-                    
-                    <!-- <a href="mailto:jesuismanoj@gmail.com?Subject=Hello%20again" target="_top"> -->
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jesuismanoj@gmail.com&su=Hello%20Hi" target="_blank">Mail Us</a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jesuismanoj@gmail.com" target="_blank">
-                        <div class="content_img">
-                            <img class="contact_image" src="mail.png" alt="Book Logo">
-                            <div class="goto_label">Email Ramya</div>
-                        </div>
-                    </a>
+        <div class="side_pics">  
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jesuismanoj@gmail.com" target="_blank">
+                <div class="content_img">
+                    <img class="contact_image" src="mail.png" alt="Book Logo" style="border:6px solid#04c2c9; border-radius:20px">
+                    <div class="goto_label">Gmail Ramya</div>
                 </div>
+            </a>             
+            <a href="https://www.linkedin.com/in/ramyanagarajan254/" target="_blank" >
+                <div class="content_img">
+                    <img class="contact_image" src="linkedin.svg" alt="Linkedin Logo" style="border:6px solid#04c2c9; border-radius:20px">
+                    <div class="goto_label">Goto Ramya's Linkedin Profile</div>
+                </div>
+            </a> 
+            <a href="https://github.com/ramyanagarajan" target="_blank" >
+                <div class="content_img">
+                    <img class="contact_image" src="github.svg" alt="Github Logo" style="border:6px solid#04c2c9; border-radius:20px">
+                    <div class="goto_label">Goto Ramya's Github Profile</div>
+                </div>
+            </a>
+            <a href="https://medium.com/@ramyatenshi" target="_blank" >
+                <div class="content_img">
+                    <img class="contact_image" src="book.svg" alt="Book Logo" style="border:6px solid#04c2c9; border-radius:20px">
+                    <div class="goto_label">Read Ramya's Articles</div>
+                </div>
+            </a>
+        </div>
+        <div class="content">
+        <section class="sec_about" id="sec_about">
+            <div class="div_about slide-right">
                     <center class="center_about_me">
-                        <p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <h2 class="about_1"> <b> About Me </b> </h2>
+                        <h1 class="heading_bar" data-animation="slide-in-left"></h1>
+                        <p class="about_name "> <b> I'm Ramya Nagarajan! </b> <br>  </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br> <br> 
+                            Since beginning my journey as a freelancer over 5 years ago, I've done remote work for startups, and collaborated with multiple talents to create digital products for both business and consumers. <br><br>
+                            Now, I work for Velocis Systems Pvt. Ltd., Noida - 201 301, Uttar Pradesh, India. <br><br> 
+                            I love to create meaningful products with beautiful and delightful User Experience. <br><br> 
+                        </p> 
+                    </center>
+            </div>
+            <center>
+            <div class="lang_i_work_on box_shadow slide-right">
+                <div class="column">
+                    <i class="fa fa-code i_style" aria-hidden="true"></i>
+                        <!-- <img class="" src="coding.png" alt="Coding Image" style="height:150px; width:150px;padding:20px"> -->
+                        <h2>Languages I speak</h2>
+                        <p>HTML<br> CSS <br> SCSS <br> JavaScript <br> </p>
+                </div>
+                <div class="column">
+                    <i class="fa fa-cogs i_style" aria-hidden="true"></i>
+                    <!-- <img class="" src="devtool.png" alt="Dev Tool Image" style="height:150px; width:150px; padding:20px; background-color: #04c2c9;"> -->
+                    <h2>Dev Tools I Use</h2>
+                    <p>Bootstrap <br>Github<br> VS Code <br></p>
+                </div>
+            </div>
+            </center><br><br>
+        </section>
+        <section class="sec_articles" id="sec_articles">
+            <!-- <p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
                         <p class="about_2"> 
                             I'm a Software Developer. <br>
                             I love to create meaningful products with beautiful and delightful User Experience.
-                        </p>
-                    </center>
-            </div>
-        </section>
-        <section class="sec_articles" id="sec_articles">
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p><p class="about_1"> <b> Hi! I'm Ramya Nagarajan! </b> <br> </p>
+                        <p class="about_2"> 
+                            I'm a Software Developer. <br>
+                            I love to create meaningful products with beautiful and delightful User Experience.
+                        </p> -->
         </section>
         <section class="sec_achievements" id="sec_achievements">
         </section>
         <section class="sec_projects" id="sec_projects">
         </section>
+    </div>
+
         <!-- <section class="sec_contact" id="sec_contact">
             Get in Touch
         </section> -->
@@ -251,9 +641,11 @@
             <div id="websiteFrameRight" class="websiteFrame"></div>
             <div id="websiteFrameBottom" class="websiteFrame"></div>
             <div id="websiteFrameLeft" class="websiteFrame"></div>
-            <center>
+            <center style="font-size: 24px;">
                 Handcrafted by me &copy; 2022.
             </center>
         </footer>
+
+    </div>
     </body>
 </html>
