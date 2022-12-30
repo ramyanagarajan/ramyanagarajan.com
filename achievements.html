@@ -4,256 +4,9 @@
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="style.css">
         <style>
-            @media only screen and (min-width:360px) and (max-width:680px) {
-                .about_2{
-                    font-size:15px !important;
-                    text-align: justify ! important;
-                    width: 75% !important;
-                    display: block;
-                }
-                .mail_image{
-                    display: none !important;
-                }
-                .goto_label{
-                    display: none !important;
-                }
-                .my_name {
-                    display: flex;
-                    align-items: center;
-                    font-size:22px !important;
-                }
-                section {
-                    margin-left: 55px !important;
-                }
-                .rightheadercontent{
-                    display: none;
-                }
-                .contact_image{
-                    width:50px !important; 
-                    height:50px !important;
-                }
-                .heading_1{
-                    font-size:19px !important;
-                }
-                .center_about_me{
-                    width: 100% !important;
-                }
-                h2{
-                    font-size:16px !important;
-                }
-                p{
-                    font-size:15px !important;
-                }
-                .handcrafted{
-                    font-size: 14px !important;
-                }
-            }
-    /* Ends Here - Media Query for (min-width:360px) and (max-width:680px) */
-    /* Starts here - Style for LG Gram */ 
-            /* Parent Container */
-            .content_img{
-                position: relative;
-                /* width: 200px;
-                height: 200px; */
-                float: left;
-                margin-right: 10px;
-                margin-top: 10px;
-            }
-            /* Child Text Container */
-            .content_img div{
-                visibility: hidden;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                background: black;
-                color: white;
-                margin-bottom: 5px;
-                font-family: sans-serif;
-                opacity: 0;
-                -webkit-transition: visibility 0s, opacity 0.5s linear; 
-                transition: visibility 0s, opacity 0.5s linear;
-            }
-            /* Hover on Parent Container */
-            .content_img:hover{
-                cursor: pointer;
-            }
-            .content_img:hover div{
-                width: 150px;
-                padding: 8px 15px;
-                visibility: visible;
-                opacity: 0.7; 
-            }
-            .header{
-                margin-top: 10px;
-                margin-left: 2px;
-                margin-right: 2px;
-                border-bottom: 5px solid #04c2c9;
-                display: flex !important;
-                /* flex-wrap: nowrap; */
-                justify-content: space-between;
-            }
-            .leftheader{
-                display: flex !important;
-            }
             
-            .rightheader{  
-                /* width: 50%;  */
-                margin: 5px;
-                display: flex;
-                justify-content: space-between;
-            }
-            a{
-                cursor: pointer;
-                color: black;
-                text-decoration: none;
-
-            }
-            a:hover {
-                color:#04c2c9 ;
-                text-shadow: 1px black;
-            }
-            
-            .side_pics{
-                position:fixed;
-                top:25%;
-                height:100%;
-                padding: 5px;
-                display: flex;
-                flex-direction: column;
-            }
-            .div_about{
-                display: flex;
-                align-items: center;
-            }
-            .my_name{
-                color: #291b6a;
-                font-size:42px;
-                width:min-content;
-                margin-top:0px;
-                display:flex;
-                align-items: center;
-            }
-            .contact_image{
-                width:100px; 
-                height:100px;
-            }
-            .heading_1{
-                font-size:60px;
-                color: #291b6a;
-            }
-            .about_name{
-                font-size:32px;
-            }
-            .center_about_me{
-                width: 100%;
-            }
-            .goto_label{
-                left:100;
-            }
-            .rightheadercontent{
-                margin: 10px;
-                font-size:32px;
-                color: #291b6a;
-
-            }
-            .profile_pic{
-                width:120px; 
-                height:120px; 
-                border-radius:100px; 
-                margin:7px;
-            }
-            .about_2{
-                line-break: 2px;
-                width:50%;
-                font-size:32px;
-                /* font-family: "europa", sans-serif; */
-                text-align: center !important;
-            }
-        /* Ends here - Style for LG Gram */ 
-
-        /* Starts here - For Fixed border around the page (responsive)*/
-            .websiteFrame {
-                position: fixed;
-                z-index: 990;
-                background-color:#04c2c9;
-                 /* rgba(198, 250, 229, 1); */
-            }
-            #websiteFrameTop {
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 10px;
-            }
-            #websiteFrameRight {
-                top: 0;
-                bottom: 0;
-                right: 0;
-                width: 10px;
-            }
-            #websiteFrameBottom {
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 10px;
-            }
-            #websiteFrameLeft {
-                top: 0;
-                bottom: 0;
-                left: 0;
-                width: 10px;
-            }
-        /* Ends here - For Fixed border around the page (responsive)*/
-        section{
-            margin-left: 100px;
-        }
-        .content {
-            flex: 1;
-            overflow: auto;
-        }
-
-        .wrapper {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        u{
-            color:black;
-        }
-        h2 {
-            font-size:28px;
-            color:#616161;
-            margin-block-end: 0em;
-        }
-          
-        .slide-right h2 {
-            animation: 1s slide-right 1s forwards;
-              transform:translateX(100%);
-          }
-          .slide-right h1 {
-            animation: 1s slide-right 1s forwards;
-            transform:translateX(100%);
-          }
-          @keyframes slide-right {
-            to {
-              transform:translate(0);
-            }
-          }
-          .heading_bar{
-            background: #291b6a;
-            height: 4px;
-            /* margin: 25px 0 100px 0; */
-            width:100px;
-          }
-          .about_heading{
-            color:#04c2c9;
-          }
-        p{
-            font-size: 24px;
-        }
-        .handcrafted{
-            font-size: 24px;
-        }
         </style>
     </head>
     <body>
@@ -278,25 +31,25 @@
         <div class="side_pics">  
             <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jesuismanoj@gmail.com" target="_blank">
                 <div class="content_img mail_image">
-                    <img class="contact_image" src="mail.png" alt="Book Logo" style="border:6px solid#04c2c9; border-radius:20px">
+                    <img class="contact_image" src="mail.png" alt="Book Logo">
                     <div class="goto_label">Gmail Ramya</div>
                 </div>
             </a>             
             <a href="https://www.linkedin.com/in/ramyanagarajan254/" target="_blank" >
                 <div class="content_img">
-                    <img class="contact_image" src="linkedin.svg" alt="Linkedin Logo" style="border:6px solid#04c2c9; border-radius:20px">
+                    <img class="contact_image" src="linkedin.svg" alt="Linkedin Logo">
                     <div class="goto_label">Goto Ramya's Linkedin Profile</div>
                 </div>
             </a> 
             <a href="https://github.com/ramyanagarajan" target="_blank" >
                 <div class="content_img">
-                    <img class="contact_image" src="github.svg" alt="Github Logo" style="border:6px solid#04c2c9; border-radius:20px">
+                    <img class="contact_image" src="github.svg" alt="Github Logo">
                     <div class="goto_label">Goto Ramya's Github Profile</div>
                 </div>
             </a>
             <a href="https://medium.com/@ramyatenshi" target="_blank" >
                 <div class="content_img">
-                    <img class="contact_image" src="book.svg" alt="Book Logo" style="border:6px solid#04c2c9; border-radius:20px">
+                    <img class="contact_image" src="book.svg" alt="Book Logo">
                     <div class="goto_label">Read Ramya's Articles</div>
                 </div>
             </a>
