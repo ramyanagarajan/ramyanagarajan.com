@@ -1,3 +1,4 @@
+/* Starts Here - Media Query for (min-width:360px) and (max-width:680px) */
 @media only screen and (min-width:360px) and (max-width:680px) {
     .mail_image{
         display: none !important;
@@ -25,14 +26,13 @@
         width: 100% !important;
     } */
     section {
-        margin-left: 55px !important;
+        /* margin-left: 55px !important; */
     }
     .rightheadercontent{
         display: none;
     }
     .contact_image{
-        width:50px !important; 
-        height:50px !important;
+        display: none !important;
     }
     .heading_1{
         font-size:19px !important;
@@ -57,10 +57,9 @@
     }
 }
 /* Ends Here - Media Query for (min-width:360px) and (max-width:680px) */
+
 /* Starts here - Style for LG Gram */ 
-/* html{
-    width: 100%;
-} */
+
 /* Parent Container */
 .content_img{
     position: relative;
@@ -148,14 +147,17 @@ a:hover {
     width: 70px;
     height: 70px;
 }
+.contact_image:hover{
+    background-color: #04c2c9 !important;
+}
 .heading_1{
-    font-size:32px;
+    font-size:28px;
     color: #291b6a;
 }
 .about_2{
     line-break: 2px;
     width:50%;
-    font-size:28px;
+    font-size:26px;
     /* font-family: "europa", sans-serif; */
     text-align: center !important;
 }
@@ -215,7 +217,7 @@ a:hover {
 }
 /* Ends here - For Fixed border around the page (responsive)*/
 section{
-margin-left: 100px;
+/* margin-left: 100px; */
 }
 .content {
 flex: 1;
@@ -231,7 +233,7 @@ u{
 color:black;
 }
 h2 {
-font-size:28px;
+font-size:26px;
 color:#616161;
 margin-block-end: 0em;
 }
