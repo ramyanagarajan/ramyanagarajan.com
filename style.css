@@ -1,5 +1,8 @@
 /* Starts Here - Media Query for (min-width:360px) and (max-width:680px) */
 @media only screen and (min-width:360px) and (max-width:680px) {
+    .speech_bubble{
+        width: 70% !important;
+    }
     .tabcontent {
         padding: 0px !important;
         }
