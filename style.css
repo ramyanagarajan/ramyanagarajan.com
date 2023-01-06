@@ -1,5 +1,26 @@
 /* Starts Here - Media Query for (min-width:360px) and (max-width:680px) */
 @media only screen and (min-width:360px) and (max-width:680px) {
+    .pers_blog_heading{
+        width:200px;
+    }
+    .card_wrapper{
+        display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    }
+    .blog_img {
+        width: 200px !important;
+        height: 100px !important;
+    }
+    .blog_heading{
+        width:200px !important;
+    }
+    .card_content_pers{
+        width: 0% !important;
+    }
+    .pers_blog_img {
+        width: 250px !important;
+    }
     .mail_image{
         display: none !important;
     }
@@ -138,7 +159,7 @@ a:hover {
 .my_name{
     color: #291b6a;
     font-size:38px;
-    width:min-content;
+    /* width:min-content; */
     margin-top:0px;
     display:flex;
     align-items: center;
@@ -289,6 +310,7 @@ margin-block-end: 0;
     padding: 15px;
     background-color: #04c2c9;
     border-radius: 30px;
+    color:#291b6a;
 }
 .handcrafted{
 font-size: 24px;
