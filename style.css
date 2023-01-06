@@ -1,7 +1,14 @@
 /* Starts Here - Media Query for (min-width:360px) and (max-width:680px) */
 @media only screen and (min-width:360px) and (max-width:680px) {
+    .tabcontent {
+        padding: 0px !important;
+        }
     .pers_blog_heading{
         width:200px;
+    }
+    .card_content_pers{
+        width: 80%!important;
+    padding: 20px !important;
     }
     .card_wrapper{
         display: flex;
@@ -15,11 +22,8 @@
     .blog_heading{
         width:200px !important;
     }
-    .card_content_pers{
-        width: 0% !important;
-    }
     .pers_blog_img {
-        width: 250px !important;
+        width: 100px !important;
     }
     .mail_image{
         display: none !important;
