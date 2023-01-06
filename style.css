@@ -319,3 +319,11 @@ margin-block-end: 0;
 .handcrafted{
 font-size: 24px;
 }
+
+.cont_img_i{
+    font-size:70px;
+    color: #291b6a;
+   }
+   .cont_img_i:hover{
+    color: #04c2c9;
+   }
